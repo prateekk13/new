@@ -1,0 +1,209 @@
+
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- <title>Twenty by HTML5 UP</title> -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<!-- <h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1> -->
+					<nav id="nav">
+						<ul>
+							<!-- <li class="current"><a href="index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Layouts</a> -->
+								<!-- <ul>
+									<li><a href="left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Submenu</a> -->
+										<!-- <ul>
+											<li><a href="#">Dolore Sed</a></li>
+											<li><a href="#">Consequat</a></li>
+											<li><a href="#">Lorem Magna</a></li>
+											<li><a href="#">Sed Magna</a></li>
+											<li><a href="#">Ipsum Nisl</a></li>
+										</ul> -->
+									<!-- </li>
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav> -->
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+                    <div id = map>
+                        <head>
+                            <meta charset="utf-8" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+                            <style>
+                                #map {
+                                    /* width: 100%; */
+                                    height: 600px;
+									margin-left: 20px;
+									margin-right: 20px;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <h1>Leaflet Route Example</h1>
+                            <div id="map"></div>
+                            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                            <script>
+                                var map = L.map('map').setView([29.332590, 76.926340], 13); // Panipat coordinates
+
+                                // Add default OSM basemap
+                                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                    attribution: '© <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                }).addTo(map);
+
+                                // Add markers (starting point and destination)
+                                L.marker([29.332590, 76.926340]).addTo(map).bindPopup('Starting Point');
+                                L.marker([29.3875, 76.9689]).addTo(map).bindPopup('Destination');
+
+                                // Replace with actual route data (decoded polyline coordinates)
+                                var routeCoordinates = [
+                                    [29.332590, 76.926340],
+                                    [29.3875, 76.9689]
+                                    // Add more coordinates if needed
+                                ];
+
+                                // Create a polyline and customize its appearance
+                                L.polyline(routeCoordinates, { color: 'blue', weight: 3 }).addTo(map);
+
+                                // Adjust map bounds to fit all markers and polyline
+                                map.fitBounds(routeCoordinates);
+
+                                // Feel free to explore other route APIs for real data!
+                            </script>
+                        </body>
+</html>
+
+                    </div>
+
+					<!-- <div class="inner">
+
+						<header>
+							<h2>TWENTY</h2>
+						</header>
+						<p>This is <strong>Twenty</strong>, a free
+						<br />
+						responsive template
+						<br />
+						by <a href="http://html5up.net">HTML5 UP</a>.</p>
+						<footer>
+							<ul class="buttons stacked">
+								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+							</ul> -->
+						</footer>
+
+					</div>
+
+				</section>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon solid fa-chart-bar"></span>
+						<h2> Join us for our wedding ceremony on 
+						<!-- <br />
+						I decided to give it a really creative name.</h2>
+						<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+						<br /> -->
+						<!-- it's minimally designed, fully responsive, built on HTML5/CSS3,
+						and, like all my stuff, -->
+						<br >
+						[Date] at [Time]
+						<br>
+						at [Place]	
+						<br>
+						[Address]		</p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style2 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-8 col-12-narrower">
+
+									<header>
+										<h2><strong>Prarthna weds Mohit </strong> </h2>
+										<p><img src ="Img.2.png" alt = "Img"></a></p>
+									</header>
+									<!-- <footer>
+										<ul class="buttons">
+											<li><a href="https://www.frostsa.ca/fbcc" target class="button">Find Out More</a></li>
+										</ul>
+									</footer> -->
+								</div>
+								<!-- <div class="col-4 col-12-narrower imp-narrower"> -->
+
+									<!-- <ul class="featured-icons">
+										<li><span class="icon fa-clock"><span class="label">Feature 1</span></span></li>
+										<li><span class="icon solid fa-volume-up"><span class="label">Feature 2</span></span></li>
+										<li><span class="icon solid fa-laptop"><span class="label">Feature 3</span></span></li>
+										<li><span class="icon solid fa-inbox"><span class="label">Feature 4</span></span></li>
+										<li><span class="icon solid fa-lock"><span class="label">Feature 5</span></span></li>
+										<li><span class="icon solid fa-cog"><span class="label">Feature 6</span></span></li>
+									</ul> -->
+
+								<!-- </div> -->
+							</div>
+						</section>
+
+				
+
+								
+
+									
+
+
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Menu</span></a></li>
+						<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.dropotron.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+
+	</body>
+</html>
