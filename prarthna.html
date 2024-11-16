@@ -69,21 +69,22 @@
                                 }).addTo(map);
 
                                 // Add markers (starting point and destination)
-                                L.marker([29.332590, 76.926340]).addTo(map).bindPopup('Starting Point');
-                                L.marker([29.3875, 76.9689]).addTo(map).bindPopup('Destination');
+       // Add markers (starting point and destination)
+L.marker([29.378069, 76.968677]).addTo(map).bindPopup('Starting Point');
+L.marker([29.437833192509824, 76.96996102206111]).addTo(map).bindPopup('Destination');
 
-                                // Replace with actual route data (decoded polyline coordinates)
-                                var routeCoordinates = [
-                                    [29.332590, 76.926340],
-                                    [29.3875, 76.9689]
-                                    // Add more coordinates if needed
-                                ];
+// Replace with actual route data (updated coordinates)
+var routeCoordinates = [
+    [29.378069, 76.968677], // Updated Starting Point
+    [29.437833192509824, 76.96996102206111] // Updated Destination Point
+];
 
-                                // Create a polyline and customize its appearance
-                                L.polyline(routeCoordinates, { color: 'blue', weight: 3 }).addTo(map);
+// Create a polyline and customize its appearance
+L.polyline(routeCoordinates, { color: 'blue', weight: 3 }).addTo(map);
 
-                                // Adjust map bounds to fit all markers and polyline
-                                map.fitBounds(routeCoordinates);
+// Adjust map bounds to fit all markers and polyline
+map.fitBounds(routeCoordinates);
+
 
                                 // Feel free to explore other route APIs for real data!
                             </script>
